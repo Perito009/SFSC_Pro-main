@@ -512,6 +512,20 @@ footer {
     color: #fffbe6;
 }
 
+.footer-section p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section p a {
+    color: #ffe066;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-section p a:hover {
+    color: #fffbe6;
+}
+
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
