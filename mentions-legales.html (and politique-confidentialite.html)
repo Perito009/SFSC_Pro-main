@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales | SFSC Propreté</title>
+    <link rel="stylesheet" href="cleanpro.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="cleanpro.html" class="logo">
+                <img src="/image Site/LogoSFSC.png" alt="SFSC Propreté Logo">
+                SFSC Propreté
+            </a>
+            <ul class="nav-links">
+                <li><a href="cleanpro.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Produits</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="#" onclick="showPage('testimonials')">Avis</a></li>
+                <li><a href="#" onclick="showPage('faq')">FAQ</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content-section legal-section">
+            <h2>Mentions Légales</h2>
+            <div class="legal-content">
+                <h3>Informations légales</h3>
+                <p>SFSC Propreté<br>
+                SARL au capital de 10 000€<br>
+                RCS Paris B 123 456 789<br>
+                SIRET : 123 456 789 00001<br>
+                TVA Intracommunautaire : FR 12 345678900</p>
+
+                <h3>Siège social</h3>
+                <p>Rue des Charmettes<br>
+                69100 Lyon<br>
+                France</p>
+
+                <h3>Contact</h3>
+                <p>Téléphone : 01 23 45 67 89<br>
+                Email : contact@sfscproprete.fr</p>
+
+                <h3>Directeur de la publication</h3>
+                <p>Marie Laurent</p>
+
+                <h3>Hébergeur</h3>
+                <p>OVH SAS<br>
+                2 rue Kellermann<br>
+                59100 Roubaix<br>
+                France</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📞 01 23 45 67 89</p>
+                    <p>📧 contact@sfscproprete.fr</p>
+                    <p>📍 Rue des Charmettes, Lyon</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Horaires</h3>
+                    <p>Lundi - Samedi: 8h - 19h</p>
+                    <p>Dimanche: Sur rendez-vous</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens rapides</h3>
+                    <a href="services.html">Services</a>
+                    <a href="products.html">Produits</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Informations légales</h3>
+                    <a href="mentions-legales.html">Mentions légales</a>
+                    <a href="politique-confidentialite.html">Politique de confidentialité</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 SFSC Propreté. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
