@@ -68,37 +68,23 @@ nav {
     font-weight: 500;
     font-size: 1.08rem;
     letter-spacing: 0.5px;
-    padding: 0.5rem 1.1rem;
-    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
     transition: 
-        color 0.2s,
-        background 0.2s,
-        box-shadow 0.2s,
-        transform 0.2s;
+        color 0.3s ease,
+        background-color 0.3s ease,
+        transform 0.3s ease;
     position: relative;
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover, 
+.nav-links a.active {
     color: #1877f2;
     background: rgba(255, 204, 64, 0.92);
-    box-shadow: 0 2px 12px rgba(255, 204, 64, 0.18);
-    transform: translateY(-2px) scale(1.05);
+    transform: translateY(-2px);
 }
 
 .nav-links a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2.5px;
-    bottom: 6px;
-    left: 20%;
-    background: linear-gradient(90deg, #ffcc40 0%, #fff 100%);
-    border-radius: 2px;
-    transition: width 0.3s;
-}
-
-.nav-links a:hover::after, .nav-links a.active::after {
-    width: 60%;
+    display: none;
 }
 
 main {
@@ -119,10 +105,17 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(
+        rgba(24, 119, 242, 0.7),
+        rgba(79, 140, 255, 0.7)
+    ), url('/image Site/backhomepage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     backdrop-filter: blur(20px);
     margin: 0;
     border-radius: 0 0 50px 50px;
+    position: relative;
 }
 
 .hero h1 {
