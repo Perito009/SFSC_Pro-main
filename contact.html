@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | SFSC Propreté</title>
+    <link rel="stylesheet" href="cleanpro.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="cleanpro.html" class="logo">
+                <img src="/image Site/LogoSFSC.png" alt="SFSC Propreté Logo">
+                SFSC Propreté
+            </a>
+            <ul class="nav-links">
+                <li><a href="cleanpro.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Produits</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="#" onclick="showPage('testimonials')">Avis</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content-section">
+            <h2>Contactez-nous</h2>
+            <div class="contact-grid">
+                <!-- Informations de contact -->
+                <div class="contact-info">
+                    <h3>Nos Coordonnées</h3>
+                    <div class="info-block">
+                        <i class="icon">📍</i>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Paris et Île-de-France</p>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <i class="icon">📞</i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>01 23 45 67 89</p>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <i class="icon">📧</i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@sfscproprete.fr</p>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <i class="icon">⏰</i>
+                        <div>
+                            <h4>Horaires</h4>
+                            <p>Lundi - Samedi: 8h - 19h<br>
+                            Dimanche: Sur rendez-vous</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/share/15mErKvazq/?mibextid=wwXIfr" target="_blank" rel="noopener">
+                            <i class="icon">👍</i> Suivez-nous sur Facebook
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Formulaire de Contact -->
+                <div class="contact-form">
+                    <h3>Demande de devis</h3>
+                    <form action="mailto:contact@sfscproprete.fr" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Téléphone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Type de service *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Choisissez un service</option>
+                                <option value="devis">Devis gratuit</option>
+                                <option value="regular">Nettoyage régulier</option>
+                                <option value="deep">Nettoyage en profondeur</option>
+                                <option value="moving">Nettoyage de déménagement</option>
+                                <option value="office">Nettoyage de bureaux</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" required>
+                                <span class="checkmark"></span>
+                                J'accepte la politique de confidentialité
+                            </label>
+                        </div>
+
+                        <button type="submit" class="cta-button">Envoyer la demande</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section carte si nécessaire -->
+        <section class="map-section">
+            <h3>Zone d'intervention</h3>
+            <div class="map-container">
+                <!-- Intégrer ici une carte Google Maps de votre zone d'intervention -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167998.10803373056!2d2.2069786!3d48.8589507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2sfr!4v1234567890"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
+    // ...existing footer code...
+</body>
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,23 +17,108 @@
 <body>
     <header>
         <nav class="container">
-            <a href="#" class="logo" onclick="showPage('home')">
-                <img src="sfsc-logo.jpg" alt="SFSC Propreté Logo">
+            <a href="cleanpro.html" class="logo">
+                <img src="/image Site/LogoSFSC.png" alt="SFSC Propreté Logo">
                 SFSC Propreté
             </a>
             <ul class="nav-links">
-                <li><a href="#" onclick="showPage('home')">Accueil</a></li>
-                <li><a href="#" onclick="showPage('services')">Services</a></li>
-                <li><a href="#" onclick="showPage('products')">Produits</a></li>
-                <li><a href="#" onclick="showPage('about')">À propos</a></li>
+                <li><a href="cleanpro.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Produits</a></li>
+                <li><a href="about.html">À propos</a></li>
                 <li><a href="#" onclick="showPage('testimonials')">Avis</a></li>
-                <li><a href="#" onclick="showPage('faq')">FAQ</a></li>
-                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <!-- ...existing code... -->
+        <section class="hero">
+            <h1>SFSC Propreté</h1>
+            <p>Excellence et professionnalisme dans le nettoyage</p>
+            <div class="hero-buttons">
+                <a href="services.html" class="cta-button">Nos Services</a>
+                <a href="contact.html" class="cta-button outline">Devis Gratuit</a>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🏠</div>
+                        <h3>Résidentiel</h3>
+                        <p>Nettoyage complet de votre maison ou appartement</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏢</div>
+                        <h3>Professionnel</h3>
+                        <p>Solutions pour bureaux et espaces commerciaux</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✨</div>
+                        <h3>Spécialisé</h3>
+                        <p>Services sur mesure pour vos besoins spécifiques</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Votre partenaire de confiance</h2>
+                        <p>SFSC Propreté s'engage à fournir des services de nettoyage exceptionnels avec une attention particulière aux détails et au respect de l'environnement.</p>
+                        <ul class="about-features">
+                            <li>✓ Personnel qualifié et formé</li>
+                            <li>✓ Produits écologiques</li>
+                            <li>✓ Service personnalisé</li>
+                            <li>✓ Disponibilité 7j/7</li>
+                        </ul>
+                        <a href="about.html" class="learn-more">En savoir plus →</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="cleaning-team.jpg" alt="Notre équipe de nettoyage">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Prêt à transformer votre espace ?</h2>
+                <p>Contactez-nous dès aujourd'hui pour un devis personnalisé</p>
+                <a href="contact.html" class="cta-button">Obtenir un devis</a>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📞 01 23 45 67 89</p>
+                    <p>📧 contact@sfscproprete.fr</p>
+                    <p>📍 Paris et Île-de-France</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Horaires</h3>
+                    <p>Lundi - Samedi: 8h - 19h</p>
+                    <p>Dimanche: Sur rendez-vous</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens rapides</h3>
+                    <a href="services.html">Services</a>
+                    <a href="products.html">Produits</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 SFSC Propreté. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

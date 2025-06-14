@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | SFSC Propreté</title>
+    <link rel="stylesheet" href="cleanpro.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="cleanpro.html" class="logo">
+                <img src="/image Site/LogoSFSC.png" alt="SFSC Propreté Logo">
+                SFSC Propreté
+            </a>
+            <ul class="nav-links">
+                <li><a href="cleanpro.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Produits</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="#" onclick="showPage('testimonials')">Avis</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content-section faq-section">
+            <h2>Questions Fréquentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Comment réserver un service de nettoyage ?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Vous pouvez réserver nos services en nous contactant par téléphone, email ou via notre formulaire en ligne. Nous vous répondrons dans les plus brefs délais pour organiser une intervention adaptée à vos besoins.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Quels sont vos tarifs ?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Nos tarifs varient selon le type de service, la surface à nettoyer et la fréquence d'intervention. Contactez-nous pour obtenir un devis personnalisé gratuit.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Utilisez-vous des produits écologiques ?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Oui, nous utilisons exclusivement des produits respectueux de l'environnement et certifiés écologiques pour garantir la sécurité de nos clients et de la planète.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Êtes-vous assurés ?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Oui, notre entreprise est entièrement assurée et nos employés sont couverts pour toute intervention chez nos clients.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Quelle est votre zone d'intervention ?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Nous intervenons dans toute la région parisienne et l'Île-de-France. Contactez-nous pour vérifier si votre zone est couverte.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📞 01 23 45 67 89</p>
+                    <p>📧 contact@sfscproprete.fr</p>
+                    <p>📍 Paris et Île-de-France</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Horaires</h3>
+                    <p>Lundi - Samedi: 8h - 19h</p>
+                    <p>Dimanche: Sur rendez-vous</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens rapides</h3>
+                    <a href="services.html">Services</a>
+                    <a href="products.html">Produits</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Informations légales</h3>
+                    <a href="mentions-legales.html">Mentions légales</a>
+                    <a href="politique-confidentialite.html">Politique de confidentialité</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 SFSC Propreté. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('.faq-icon');
+            
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+                icon.textContent = '+';
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                icon.textContent = '-';
+            }
+        }
+    </script>
+</body>
+</html>
