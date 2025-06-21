@@ -107,9 +107,9 @@ main {
     align-items: center;
     text-align: center;
     background: linear-gradient(
-        rgba(24, 119, 242, 0.7),
-        rgba(79, 140, 255, 0.7)
-    ), url('/image Site/backhomepage.png');
+        rgba(32, 123, 207, 0.555),
+        rgba(219, 221, 228, 0.5)
+    ), url('/images/3d Mockup.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
