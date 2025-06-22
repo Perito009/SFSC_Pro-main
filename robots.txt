@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /private/
 
-Sitemap: https://www.sfscproprete.fr/sitemap.xml
+Sitemap: https://www.sfscproprete.net/sitemap.xml
