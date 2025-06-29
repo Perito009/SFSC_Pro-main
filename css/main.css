@@ -840,3 +840,66 @@ select#service option:first-child {
         border-radius: 12px;
     }
 }
+
+.loader {
+    position: relative; /* was absolute, now relative for normal flow */
+    top: unset;
+    left: unset;
+    transform: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: auto;
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.loader h1,
+.loader h2 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 4em;
+    line-height: 1.1;
+    color: #ffcc40; /* Set text color */
+    background-image: url('/images/wave.png');
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: animate 4s linear infinite; /* Faster wave effect */
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    letter-spacing: 0.05em;
+    /* Responsive font size */
+}
+
+@media (max-width: 900px) {
+    .loader h1,
+    .loader h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    .loader h1,
+    .loader h2 {
+        font-size: 1.5em;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position: left 0px top 80px;
+    }
+    40% {
+        background-position: left 800px top -50px;
+    }
+    80% {
+        background-position: left 1800px top -50px;
+    }
+    100% {
+        background-position: left 2400px top 80px;
+    }
+}
