@@ -33,6 +33,7 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/carousel.css">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/images/SFSC_Logo-1.jpg">
@@ -102,9 +103,8 @@
 
         <section class="features-section">
             <div class="container">
-                <div class="features-carousel">
-                    <button class="carousel-arrow left" id="features-prev">&#8592;</button>
-                    <div class="features-grid" id="features-carousel-grid">
+                <div class="carousel">
+                    <div class="group">
                         <div class="feature-card">
                             <div class="feature-icon">🏠</div>
                             <h3>Résidentiel</h3>
@@ -121,7 +121,23 @@
                             <p>Services sur mesure pour vos besoins spécifiques</p>
                         </div>
                     </div>
-                    <button class="carousel-arrow right" id="features-next">&#8594;</button>
+                    <div class="group" aria-hidden="true">
+                        <div class="feature-card">
+                            <div class="feature-icon">🏠</div>
+                            <h3>Résidentiel</h3>
+                            <p>Nettoyage complet de votre maison ou appartement</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🏢</div>
+                            <h3>Professionnel</h3>
+                            <p>Solutions pour bureaux et espaces commerciaux</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">✨</div>
+                            <h3>Spécialisé</h3>
+                            <p>Services sur mesure pour vos besoins spécifiques</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
