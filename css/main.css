@@ -856,18 +856,18 @@ select#service option:first-child {
 
 .loader h1,
 .loader h2 {
+    color: #ffcc40;
     margin: 0;
     padding: 0;
     text-transform: uppercase;
     font-size: 4em;
-    line-height: 1.1;
-    color: #ffcc40; /* Set text color */
+    line-height: 1.1; /* Set text color */
     background-image: url('/images/wave.png');
     background-repeat: repeat-x;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: animate 4s linear infinite; /* Faster wave effect */
+    animation: animate 3s linear infinite; /* Faster wave effect */
     display: inline-block;
     width: 100%;
     text-align: left;
