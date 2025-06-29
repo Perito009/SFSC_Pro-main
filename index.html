@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="/css/main.css">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/images/Site/favicon.png">
+    <link rel="icon" type="image/png" href="/images/SFSC_Logo-1.jpg">
     
     <!-- Schema.org markup enrichi -->
     <script type="application/ld+json">
@@ -43,7 +43,7 @@
         "@context": "https://schema.org",
         "@type": "CleaningService",
         "name": "SFSC Propreté",
-        "image": "https://www.sfscproprete.fr/images/Site/LogoSFSC.png",
+        "image": "https://www.sfscproprete.fr/images/SFSC_Logo-1.jpg",
         "description": "Services de nettoyage professionnel à Lyon : bureaux, commerces et particuliers",
         "areaServed": {
             "@type": "City",
@@ -101,22 +101,26 @@
 
         <section class="features-section">
             <div class="container">
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">🏠</div>
-                        <h3>Résidentiel</h3>
-                        <p>Nettoyage complet de votre maison ou appartement</p>
+                <div class="features-carousel">
+                    <button class="carousel-arrow left" id="features-prev">&#8592;</button>
+                    <div class="features-grid" id="features-carousel-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🏠</div>
+                            <h3>Résidentiel</h3>
+                            <p>Nettoyage complet de votre maison ou appartement</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🏢</div>
+                            <h3>Professionnel</h3>
+                            <p>Solutions pour bureaux et espaces commerciaux</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">✨</div>
+                            <h3>Spécialisé</h3>
+                            <p>Services sur mesure pour vos besoins spécifiques</p>
+                        </div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🏢</div>
-                        <h3>Professionnel</h3>
-                        <p>Solutions pour bureaux et espaces commerciaux</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">✨</div>
-                        <h3>Spécialisé</h3>
-                        <p>Services sur mesure pour vos besoins spécifiques</p>
-                    </div>
+                    <button class="carousel-arrow right" id="features-next">&#8594;</button>
                 </div>
             </div>
         </section>
@@ -136,7 +140,7 @@
                         <a href="about.html" class="learn-more">En savoir plus →</a>
                     </div>
                     <div class="about-image">
-                        <img src="cleaning-team.jpg" alt="Notre équipe de nettoyage">
+                        <video src="images/cleaning-team.mp4" autoplay muted loop playsinline style="width:100%;border-radius:20px;box-shadow:0 8px 32px rgba(0,0,0,0.2);object-fit:cover;aspect-ratio:3/2;"></video>
                     </div>
                 </div>
             </div>
@@ -183,5 +187,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- Script pour le carousel des fonctionnalités -->
+    <script src="/js/features-carousel.js"></script>
 </body>
 </html>
