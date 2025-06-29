@@ -856,11 +856,11 @@ select#service option:first-child {
 
 .loader h1,
 .loader h2 {
-    color: #ffcc40;
     margin: 0;
     padding: 0;
     text-transform: uppercase;
     font-size: 4em;
+    background-color: #ffcc40;
     line-height: 1.1; /* Set text color */
     background-image: url('/images/wave.png');
     background-repeat: repeat-x;
@@ -901,5 +901,56 @@ select#service option:first-child {
     }
     100% {
         background-position: left 2400px top 80px;
+    }
+}
+
+#ecologie-confiance {
+    padding: 5rem 0 5rem 0;
+    background: rgba(255,255,255,0.13);
+    border-radius: 32px;
+    margin: 3rem auto;
+    max-width: 1100px;
+    box-shadow: 0 8px 32px rgba(24,119,242,0.10), 0 1.5px 8px rgba(255,204,64,0.07);
+}
+
+#ecologie-confiance h2 {
+    font-size: 3rem;
+    color: #ffcc40;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#ecologie-confiance p,
+#ecologie-confiance ul {
+    font-size: 1.35rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#ecologie-confiance ul {
+    list-style: none;
+    padding: 0;
+}
+
+#ecologie-confiance ul li {
+    margin-bottom: 1.2rem;
+    font-size: 1.25em;
+    color: #ffe066;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    #ecologie-confiance {
+        padding: 2rem 0.5rem;
+        border-radius: 18px;
+    }
+    #ecologie-confiance h2 {
+        font-size: 2rem;
+    }
+    #ecologie-confiance p,
+    #ecologie-confiance ul {
+        font-size: 1.05rem;
     }
 }
