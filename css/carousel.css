@@ -27,18 +27,37 @@
     animation-play-state: paused;
 }
 .feature-card {
-    min-width: 280px;
+    min-width: 260px;
     max-width: 320px;
-    flex: 0 0 100%;
-    margin: 0 1rem;
+    flex: 0 0 80vw;
+    margin: 0 10px;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
-    padding: 2rem;
+    padding: 2rem 1rem;
     border-radius: 20px;
     text-align: center;
     transition: transform 0.3s ease;
+    box-sizing: border-box;
 }
 .feature-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .carousel {
+        margin-bottom: 1rem;
+    }
+    .group {
+        gap: 10px;
+        padding-right: 10px;
+    }
+    .feature-card {
+        min-width: 85vw;
+        max-width: 90vw;
+        margin: 0 5px;
+        padding: 1.2rem 0.5rem;
+        font-size: 0.98rem;
+    }
 }
