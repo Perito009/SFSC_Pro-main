@@ -69,22 +69,20 @@
                 <!-- Formulaire de Contact -->
                 <div class="contact-form">
                     <h3>Demande de devis</h3>
-                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="text/plain">
+                    <form id="contactForm" action="https://formspree.io/f/xyyqzjzv" method="POST">
+                        <!-- Remplacez l'ID Formspree ci-dessus par le vôtre si besoin -->
                         <div class="form-group">
                             <label for="name">Nom complet *</label>
                             <input type="text" id="name" name="name" required autocomplete="name">
                         </div>
-
                         <div class="form-group">
                             <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required autocomplete="email">
+                            <input type="email" id="email" name="_replyto" required autocomplete="email">
                         </div>
-
                         <div class="form-group">
                             <label for="phone">Téléphone *</label>
                             <input type="tel" id="phone" name="phone" required autocomplete="tel" pattern="[0-9]{10}">
                         </div>
-
                         <div class="form-group">
                             <label for="service">Type de service *</label>
                             <select id="service" name="service" required>
@@ -96,17 +94,44 @@
                                 <option value="office">Nettoyage de bureaux</option>
                             </select>
                         </div>
-
                         <div class="form-group">
                             <label for="address">Adresse de l'intervention</label>
                             <input type="text" id="address" name="address" autocomplete="street-address">
                         </div>
-
                         <div class="form-group">
-                            <label for="message">Message *</label>
+                            <label for="client_company">Nom de l'entreprise / Client</label>
+                            <input type="text" id="client_company" name="Nom de l'entreprise / Client">
+                        </div>
+                        <div class="form-group">
+                            <label for="client_address">Adresse du client</label>
+                            <input type="text" id="client_address" name="Adresse du client">
+                        </div>
+                        <div class="form-group">
+                            <label for="client_siret">SIRET du client</label>
+                            <input type="text" id="client_siret" name="SIRET du client">
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date souhaitée d'intervention</label>
+                            <input type="date" id="date" name="Date souhaitée d'intervention">
+                        </div>
+                        <div class="form-group">
+                            <label for="surface">Surface à nettoyer (m²)</label>
+                            <input type="number" id="surface" name="Surface à nettoyer" min="1" step="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="objet">Objet de la demande</label>
+                            <input type="text" id="objet" name="Objet de la demande">
+                        </div>
+                        <div class="form-group">
+                            <label for="frequence">Fréquence souhaitée</label>
+                            <input type="text" id="frequence" name="Fréquence souhaitée" placeholder="ex: 2 fois/semaine">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Autres précisions / Message *</label>
                             <textarea id="message" name="message" rows="4" required></textarea>
                         </div>
-
+                        <!-- Champ anti-spam caché -->
+                        <input type="text" name="_gotcha" style="display:none">
                         <div class="form-group">
                             <label class="checkbox-container">
                                 <input type="checkbox" required>
@@ -114,8 +139,10 @@
                                 J'accepte la politique de confidentialité
                             </label>
                         </div>
-
                         <button type="submit" class="cta-button">Envoyer la demande</button>
+                        <div id="form-success" style="display:none;color:#fff;margin-top:1em;text-align:center;">
+                            Merci, votre demande a bien été envoyée !
+                        </div>
                     </form>
                 </div>
             </div>
@@ -185,5 +212,27 @@
             </div>
         </div>
     </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('contactForm');
+    if(form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var data = new FormData(form);
+            var xhr = new XMLHttpRequest();
+            xhr.open(form.method, form.action);
+            xhr.setRequestHeader('Accept', 'application/json');
+            xhr.onreadystatechange = function() {
+                if(xhr.readyState !== XMLHttpRequest.DONE) return;
+                if(xhr.status === 200) {
+                    form.reset();
+                    document.getElementById('form-success').style.display = 'block';
+                }
+            };
+            xhr.send(data);
+        });
+    }
+});
+</script>
 </body>
 </html>
