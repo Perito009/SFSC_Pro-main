@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background: rgba(24, 119, 242, 0.85);
+    background-color:#1877f2;
     backdrop-filter: blur(12px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
     position: fixed;
@@ -113,7 +113,7 @@ main {
     background-attachment: fixed;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    margin: 0;
+    bottom: 100px;
     border-radius: 0 0 50px 50px;
     position: relative;
 }
@@ -499,14 +499,14 @@ main {
 
 .legal-content p, .privacy-content p {
     margin-bottom: 1.5rem;
-    color: #fff;
+    color: #070101;
 }
 
 .privacy-content ul {
     list-style: disc;
     margin-left: 2rem;
     margin-bottom: 1.5rem;
-    color: #fff;
+    color: #0f0303;
 }
 
 .privacy-content li {
