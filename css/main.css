@@ -7,10 +7,10 @@
 body {
     font-family: 'Segoe UI', 'Arial', sans-serif;
     line-height: 1.7;
-    color: #ffcc40;
-    background: linear-gradient(135deg, #1877f2 0%, #4f8cff 100%);
+    color: #070706;
     min-height: 100vh;
     background-attachment: fixed;
+    background-color: #f0f2f5;
 }
 
 header {
@@ -125,8 +125,10 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(24, 32, 48, 0.45); /* dark overlay for readability */
+    background: rgba(8, 8, 8, 0.45); /* dark overlay for readability */
     z-index: 0;
+    border-radius: 0 0 50px 50px;
+    
 }
 
 .hero h1,
@@ -212,7 +214,7 @@ main {
 }
 
 .feature-card {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(235, 232, 232, 0.15);
     backdrop-filter: blur(10px);
     padding: 2rem;
     border-radius: 20px;
@@ -239,7 +241,7 @@ main {
 .content-section h2 {
     font-size: 2.7rem;
     margin-bottom: 2.2rem;
-    color: #ffcc40;
+    color: #131212;
     text-align: center;
     letter-spacing: 1px;
     text-shadow: 0 2px 12px rgba(24,119,242,0.10);
@@ -645,8 +647,8 @@ footer {
     padding: 0.8rem;
     border: 1px solid rgba(255, 204, 64, 0.3);
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
+    background: rgba(255, 254, 254, 0.1);
+    color: #140202;
     font-size: 1rem;
 }
 
@@ -663,7 +665,7 @@ footer {
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
-    color: #fff;
+    color: #070606;
 }
 
 .checkbox-container input[type="checkbox"] {
@@ -673,13 +675,13 @@ footer {
 
 select#service {
     background: rgba(255, 204, 64, 0.1);
-    color: #fff;
+    color: #080000;
     cursor: pointer;
 }
 
 select#service option {
     background: #1877f2;
-    color: #fff;
+    color: #070707;
 }
 
 select#service option:first-child {
@@ -930,7 +932,7 @@ select#service option:first-child {
 #ecologie-confiance p,
 #ecologie-confiance ul {
     font-size: 1.35rem;
-    color: #fff;
+    color: #0e0d0d;
     text-align: center;
     margin-bottom: 2rem;
 }
