@@ -113,7 +113,7 @@ main {
     background-attachment: fixed;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    bottom: 100px;
+    bottom: 95px;
     border-radius: 0 0 50px 50px;
     position: relative;
 }
