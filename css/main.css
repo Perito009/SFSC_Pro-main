@@ -113,7 +113,6 @@ main {
     background-attachment: fixed;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    bottom: 95px;
     border-radius: 0 0 50px 50px;
     position: relative;
 }
@@ -688,70 +687,7 @@ select#service option:first-child {
     font-style: italic;
 }
 
-/* Responsive Form Styles */
-@media (max-width: 768px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .form-group {
-        margin-bottom: 1rem;
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-        padding: 0.7rem;
-        font-size: 0.95rem;
-    }
-
-    .info-block {
-        padding: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .info-block .icon {
-        font-size: 1.5rem;
-    }
-
-    .cta-button {
-        width: 100%;
-        padding: 1rem;
-        font-size: 1rem;
-    }
-
-    .map-section {
-        padding: 1rem;
-    }
-
-    .map-container iframe {
-        height: 300px;
-    }
-}
-
-@media (max-width: 480px) {
-    .contact-form {
-        padding: 1rem;
-    }
-
-    .form-group label {
-        font-size: 0.9rem;
-    }
-
-    .checkbox-container {
-        font-size: 0.85rem;
-    }
-
-    .info-block h4 {
-        font-size: 1rem;
-    }
-
-    .info-block p {
-        font-size: 0.9rem;
-    }
-}
-
+/* Responsive styles */
 @media (max-width: 900px) {
     .hero, .content-section {
         padding: 2.2rem 1rem;
@@ -769,27 +705,50 @@ select#service option:first-child {
     .hero-buttons {
         flex-direction: column;
     }
-    
     .about-content {
         grid-template-columns: 1fr;
     }
-    
     .about-image {
         order: -1;
     }
-
     .about-story {
         grid-template-columns: 1fr;
     }
-    
     .certifications {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
     }
-
     .contact-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.7rem;
+        font-size: 0.95rem;
+    }
+    .info-block {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    .info-block .icon {
+        font-size: 1.5rem;
+    }
+    .cta-button {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .map-section {
+        padding: 1rem;
+    }
+    .map-container iframe {
+        height: 300px;
     }
 }
 
@@ -819,19 +778,18 @@ select#service option:first-child {
     }
     header {
         padding-bottom: 0;
+        height: 56px;
     }
     main {
-        margin-top: 80px;
+        margin-top: 56px;
     }
-}
-
-@media (max-width: 600px) {
     .hero {
         background-attachment: scroll;
         background-size: cover;
         background-position: top center;
-        min-height: 60vh;
+        min-height: 55vw;
         border-radius: 0 0 18px 18px;
+        padding: 1.2rem 0.5rem 1.5rem 0.5rem;
     }
     .hero h1 {
         font-size: 2.1rem;
@@ -839,13 +797,35 @@ select#service option:first-child {
     .content-section h2 {
         font-size: 1.5rem;
     }
-    .hero, .content-section {
+    .content-section {
         padding: 1.2rem 0.5rem;
         border-radius: 16px;
     }
     .service-card, .product-card, .testimonial {
         padding: 1.2rem 0.5rem;
         border-radius: 12px;
+    }
+    .loader h1,
+    .loader h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 1rem;
+    }
+    .form-group label {
+        font-size: 0.9rem;
+    }
+    .checkbox-container {
+        font-size: 0.85rem;
+    }
+    .info-block h4 {
+        font-size: 1rem;
+    }
+    .info-block p {
+        font-size: 0.9rem;
     }
 }
 
