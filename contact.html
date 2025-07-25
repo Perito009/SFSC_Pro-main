@@ -141,7 +141,7 @@
                         </div>
                         <button type="submit" class="cta-button">Envoyer la demande</button>
                         <div id="form-success" style="display:none;color:#0c0b0b;margin-top:1em;text-align:center;">
-                            Merci, votre demande a bien été envoyée !
+                            Merci, votre demande a bien été envoyée!
                         </div>
                     </form>
                 </div>
@@ -212,27 +212,6 @@
             </div>
         </div>
     </footer>
-    <script>
-document.addEventListener('DOMContentLoaded', function() {
-    var form = document.getElementById('contactForm');
-    if(form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            var data = new FormData(form);
-            var xhr = new XMLHttpRequest();
-            xhr.open(form.method, form.action);
-            xhr.setRequestHeader('Accept', 'application/json');
-            xhr.onreadystatechange = function() {
-                if(xhr.readyState !== XMLHttpRequest.DONE) return;
-                if(xhr.status === 200) {
-                    form.reset();
-                    document.getElementById('form-success').style.display = 'block';
-                }
-            };
-            xhr.send(data);
-        });
-    }
-});
-</script>
+    <script src="js/submit-form-contact.js"></script>
 </body>
 </html>
