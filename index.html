@@ -159,52 +159,59 @@
                 <h2>Nos valeurs</h2> 
             </div> 
             <div class="values-grid">
-                <div class="value-card">
+                <div class="value-card" data-title="Éco-responsabilité" data-desc="Utilisation exclusive de produits respectueux de l'environnement">
                     <div class="value-icon">🌱</div>
                     <h3>Éco-responsabilité</h3>
                     <p>Utilisation exclusive de produits respectueux de l'environnement</p>
                 </div>
-                <div class="value-card">
+                <div class="value-card" data-title="Qualité" data-desc="Des prestations soignées et un haut niveau d’exigence pour chaque intervention">
                     <div class="value-icon">🏅</div>
                     <h3>Qualité</h3>
                     <p>Des prestations soignées et un haut niveau d’exigence pour chaque intervention</p>
                 </div>
-                <div class="value-card">
+                <div class="value-card" data-title="Professionnalisme" data-desc="Personnel formé et qualifié pour des résultats exceptionnels">
                     <div class="value-icon">💪</div>
                     <h3>Professionnalisme</h3>
                     <p>Personnel formé et qualifié pour des résultats exceptionnels</p>
                 </div>
-                <div class="value-card">
+                <div class="value-card" data-title="Confiance" data-desc="Relations durables basées sur la transparence et la fiabilité">
                     <div class="value-icon">🤝</div>
                     <h3>Confiance</h3>
                     <p>Relations durables basées sur la transparence et la fiabilité</p>
                 </div>
-                <div class="value-card">
+                <div class="value-card" data-title="Flexibilité" data-desc="Adaptation à vos besoins et à vos contraintes horaires">
                     <div class="value-icon">🔄</div>
                     <h3>Flexibilité</h3>
                     <p>Adaptation à vos besoins et à vos contraintes horaires</p>
                 </div>
-                <div class="value-card">
+                <div class="value-card" data-title="Transparence" data-desc="Communication claire et honnête sur nos prestations">
                     <div class="value-icon">🔍</div>
                     <h3>Transparence</h3>
                     <p>Communication claire et honnête sur nos prestations</p>
                 </div>
-                <div class="value-card">
+                <div class="value-card" data-title="Privilèges" data-desc="Avantages et offres exclusives pour nos clients fidèles">
                     <div class="value-icon">🎁</div>
                     <h3>Privilèges</h3>
                     <p>Avantages et offres exclusives pour nos clients fidèles</p>
                 </div>
-                <div class="value-card">
+                <div class="value-card" data-title="Sérénité" data-desc="Tranquillité d’esprit grâce à un service fiable et soigné">
                     <div class="value-icon">🧘</div>
                     <h3>Sérénité</h3>
                     <p>Tranquillité d’esprit grâce à un service fiable et soigné</p>
                 </div>
-                <div class="value-card">
+                <div class="value-card" data-title="Proximité" data-desc="Un interlocuteur disponible rapidement par téléphone ou mail">
                     <div class="value-icon">📞</div>
                     <h3>Proximité</h3>
                     <p>Un interlocuteur disponible rapidement par téléphone ou mail</p>
                 </div>
-                
+            </div>
+            <!-- Modale pour afficher le détail d'une valeur -->
+            <div class="value-modal" id="valueModal">
+                <div class="value-modal-content">
+                    <button class="value-modal-close" id="closeValueModal" aria-label="Fermer">&times;</button>
+                    <h3 id="modalValueTitle"></h3>
+                    <p id="modalValueDesc"></p>
+                </div>
             </div>
             <h2>Prêt à transformer votre espace ?</h2>
                 <p>Contactez-nous dès aujourd'hui pour un devis personnalisé</p>
@@ -267,5 +274,28 @@
 
     <!-- Script pour le carousel des fonctionnalités -->
     <script src="/js/features-carousel.js"></script>
+    <!-- JS pour la modale des valeurs du carousel de Nos Valeurs -->
+    <script>
+(function() {
+    var cards = document.querySelectorAll('.value-card');
+    var modal = document.getElementById('valueModal');
+    var closeBtn = document.getElementById('closeValueModal');
+    var modalTitle = document.getElementById('modalValueTitle');
+    var modalDesc = document.getElementById('modalValueDesc');
+    cards.forEach(function(card) {
+        card.addEventListener('click', function() {
+            modalTitle.textContent = card.getAttribute('data-title');
+            modalDesc.textContent = card.getAttribute('data-desc');
+            modal.classList.add('active');
+        });
+    });
+    closeBtn.addEventListener('click', function() {
+        modal.classList.remove('active');
+    });
+    modal.addEventListener('click', function(e) {
+        if(e.target === modal) modal.classList.remove('active');
+    });
+})();
+</script>
 </body>
 </html>

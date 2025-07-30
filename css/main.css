@@ -753,43 +753,46 @@ select#service option:first-child {
 }
 
 @media (max-width: 600px) {
-    nav {
+    header {
+        min-height: 70px;
+    }
+    nav,
+    header nav.container {
         flex-direction: column;
-        gap: 0.2rem;
-        padding: 0.5rem 0;
+        align-items: stretch;
+        min-height: 90px; /* augmente la hauteur */
+        padding: 0.7rem 0 0.7rem 0;
+        gap: 0.5rem;
     }
     .logo {
-        font-size: 1.3rem;
+        font-size: 1.35rem;
         gap: 0.4rem;
+        justify-content: center;
+        margin-bottom: 0.3rem;
     }
     .logo img {
-        height: 36px;
+        height: 40px;
         border-radius: 8px;
     }
     .nav-links {
-        gap: 0.2rem;
+        gap: 0.5rem;
         width: 100%;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .nav-links a {
-        padding: 0.5rem 0.7rem;
-        font-size: 0.98rem;
+        padding: 0.7rem 1.1rem;
+        font-size: 1.08rem;
         word-break: keep-all;
-    }
-    header {
-        padding-bottom: 0;
-        height: 56px;
+        text-align: center;
+        border-radius: 0.5rem;
     }
     main {
-        margin-top: 56px;
+        margin-top: 70px; /* Ajuste selon la hauteur réelle de ta navbar */
     }
     .hero {
-        background-attachment: scroll;
-        background-size: cover;
-        background-position: top center;
-        min-height: 55vw;
-        border-radius: 0 0 18px 18px;
-        padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+        padding-top: 2.5rem; /* Ajoute de l'espace en haut pour décoller du header */
+        /* ...autres propriétés existantes... */
     }
     .hero h1 {
         font-size: 2.1rem;
@@ -808,6 +811,68 @@ select#service option:first-child {
     .loader h1,
     .loader h2 {
         font-size: 1.5em;
+    }
+    .values-grid {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 1rem;
+        padding-bottom: 1rem;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    .value-card {
+        min-width: 220px;
+        max-width: 80vw;
+        flex: 0 0 auto;
+        font-size: 0.98rem;
+        scroll-snap-align: start;
+        cursor: pointer;
+        transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .value-card:active {
+        box-shadow: 0 4px 24px #1877f2aa;
+        transform: scale(1.04);
+    }
+    .values-grid::-webkit-scrollbar {
+        display: none;
+    }
+    /* Modale pour détail valeur */
+    .value-modal {
+        display: none;
+        position: fixed;
+        z-index: 2000;
+        left: 0; top: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.45);
+        align-items: center;
+        justify-content: center;
+    }
+    .value-modal.active {
+        display: flex;
+    }
+    .value-modal-content {
+        background: #fff;
+        color: #1877f2;
+        border-radius: 18px;
+        padding: 2rem 1.2rem;
+        max-width: 90vw;
+        box-shadow: 0 8px 32px #1877f2aa;
+        text-align: center;
+        position: relative;
+    }
+    .value-modal-content h3 {
+        color: #ffcc40;
+        margin-bottom: 1rem;
+    }
+    .value-modal-close {
+        position: absolute;
+        top: 0.7rem;
+        right: 1rem;
+        font-size: 2rem;
+        color: #1877f2;
+        background: none;
+        border: none;
+        cursor: pointer;
     }
 }
 
