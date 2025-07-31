@@ -602,7 +602,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    color: #ffcc40;
+    color: #000000; /* Noir */
     text-decoration: none;
     font-size: 1.1rem;
     padding: 1rem;
@@ -788,7 +788,7 @@ select#service option:first-child {
         border-radius: 0.5rem;
     }
     main {
-        margin-top: 70px; /* Ajuste selon la hauteur réelle de ta navbar */
+        margin-top: 95px; /* Ajuste selon la hauteur réelle de ta navbar */
     }
     .hero {
         padding-top: 2.5rem; /* Ajoute de l'espace en haut pour décoller du header */
